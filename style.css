@@ -1,56 +1,48 @@
 
-/* teststyle.css */
+/* style.css */
 
 body, html {
-  background-color:#2E3440; /* Dark grey */
-  height: 100%; /* Full height of the viewport */
-  grid-template-rows
-  margin: 0 ; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Optional: Set the font */
+  background-color:#2E3440; 
+  height: 100%; 
+  margin: 0 ; 
+  font-family: Arial, sans-serif; 
 }
 
 /* Set up CSS Grid on the container */
 .container {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
-  height: 100%; /* Full height of the viewport */
-  place-items: center; /* Center the link both vertically and horizontally */
+  height: 100%; 
+  place-items: center; 
 }
 
-/* Style the link */
 .centered-link {
   font-size: 5rem;
   padding: 15px 30px;
-  color: #5E81AC; /* Darker blue when hovered */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
+  color: #5E81AC; 
+  text-decoration: none; 
+  border-radius: 5px; 
   transition: background-color 0.3s; 
   margin-bottom: 0px;
 }
 
-/* Add hover effect to the link */
 .centered-link:hover {
   color: #88C0D0;
 }
-/* Style the link */
 .small-centered-link {
   font-size: 2rem;
   padding: 15px 30px;
-  color: #5E81AC; /* Darker blue when hovered */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
+  color: #5E81AC; 
   transition: background-color 0.3s; 
   margin-bottom: 0px;
 }
-/* Add hover effect to the link */
 .small-centered-link:hover {
   color: #88C0D0;
 }
 
 .centered-text {
-  font-size: 20px; /* Make "foo" the same size as the link, or adjust as you prefer */
-  color: #5E81AC; /* Darker blue when hovered */
-  margin-top: 0px; /* Optional: Adds space above the text */
+  font-size: 20px; 
+  color: #5E81AC; 
+  margin-top: 0px; 
 }
 
 
