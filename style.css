@@ -52,6 +52,10 @@ body, html {
     transition: color 0.3s ease;
 }
 
+.name-link {
+    text-decoration: none;
+}
+
 .name:hover {
     color: var(--nord8);
 }
