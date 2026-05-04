@@ -1,32 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thomas Haffenreffer - Cloud Infrastructure Engineer">
-    <title>Thomas Haffenreffer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Thomas Haffenreffer. Cloud engineer now building AI infrastructure. Tools that augment thinking, not replace it.">
+<title>Thomas Haffenreffer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function() {
+    const stored = localStorage.getItem('theme');
+    const systemLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const theme = stored || (systemLight ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 </head>
 <body>
-    <div class="container">
-        <header class="hero">
-            <a href="about.html" class="name-link"><h1 class="name">Thomas Haffenreffer</h1></a>
-            <p class="tagline">Cloud Engineer | Infrastructure | Future of Finance & Governance</p>
-        </header>
-
-        <nav class="nav-links">
-            <a href="about.html" class="nav-link">About</a>
-            <a href="https://github.com/Squamis" class="nav-link" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/thomas-haffenreffer-3575b717a" class="nav-link" target="_blank" rel="noopener">LinkedIn</a>
-        </nav>
-
-        <section class="intro">
-            <p>Building cloud infrastructure at Atos. Interested in blockchain, decentralized systems, and the future of finance and governance.</p>
-        </section>
-
-        <footer class="footer">
-            <p>Cambridge, MA | <a href="mailto:thomas.haffenreffer@gmail.com">thomas.haffenreffer@gmail.com</a></p>
-        </footer>
+<div class="frame">
+  <header class="bar">
+    <span class="sigil">~</span>
+    <span class="path">thomashaffenreffer.com</span>
+    <div class="theme-toggle" role="group" aria-label="Color theme">
+      <span class="bracket">[</span>
+      <button class="theme-option" type="button" data-theme-set="light">light</button>
+      <span class="sep">|</span>
+      <button class="theme-option" type="button" data-theme-set="dark">dark</button>
+      <span class="bracket">]</span>
     </div>
+  </header>
+
+  <section class="hero">
+    <h1>Thomas<br>Haffenreffer</h1>
+    <p class="role">ai infrastructure / verifiable systems<br>cambridge / massachusetts</p>
+  </section>
+
+  <section class="block">
+    <div class="block-header">
+      <span class="block-num">/01</span>
+      <span class="block-title">now</span>
+    </div>
+    <div class="block-body">
+      <p>I'm a cloud engineer now building AI infrastructure. I build software to <strong>augment thinking, not replace it</strong>.</p>
+      <p>My goal: software that <strong>structurally cannot betray its users</strong>, using verifiable crypto or AI tools.</p>
+      <p>Check my projects below for my take on individual-first tech.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-header">
+      <span class="block-num">/02</span>
+      <span class="block-title">projects</span>
+    </div>
+    <div class="block-body">
+
+      <article class="project">
+        <header class="project-head">
+          <h3>zero-to-hero</h3>
+          <span class="flag flag-public">public</span>
+        </header>
+        <p>Self-built LLM curriculum from gradient descent to a working transformer. One level per directory, each level shipping its own benchmark and plot.</p>
+        <p class="tags">python · pytorch · numpy</p>
+        <a href="https://github.com/Squamis/zero-to-hero" target="_blank" rel="noopener">~ github.com/Squamis/zero-to-hero</a>
+      </article>
+
+      <article class="project">
+        <header class="project-head">
+          <h3>obsidian-ai-workflow</h3>
+          <span class="flag flag-public">public</span>
+        </header>
+        <p>A second-brain stack pairing GTD task management with a Zettelkasten knowledge base, driven end-to-end through Claude Code. Demo vault you can clone and run.</p>
+        <p class="tags">obsidian · claude-code · zettelkasten</p>
+        <a href="https://github.com/Squamis/obsidian-ai-workflow" target="_blank" rel="noopener">~ github.com/Squamis/obsidian-ai-workflow</a>
+      </article>
+
+      <article class="project">
+        <header class="project-head">
+          <h3>rust_bitcoin_wallet</h3>
+          <span class="flag flag-public">public</span>
+        </header>
+        <p>A Bitcoin wallet implemented in Rust. Self-custody primitives, key management, transaction construction. Built to learn the protocol from the inside out.</p>
+        <p class="tags">rust · bitcoin · cryptography</p>
+        <a href="https://github.com/Squamis/rust_bitcoin_wallet" target="_blank" rel="noopener">~ github.com/Squamis/rust_bitcoin_wallet</a>
+      </article>
+
+      <article class="project">
+        <header class="project-head">
+          <h3>rust_blockchain</h3>
+          <span class="flag flag-public">public</span>
+        </header>
+        <p>A blockchain protocol implementation in Rust. Block structure, consensus primitives, networking. Built from scratch to understand the verifiability story.</p>
+        <p class="tags">rust · blockchain · distributed-systems</p>
+        <a href="https://github.com/Squamis/rust_blockchain" target="_blank" rel="noopener">~ github.com/Squamis/rust_blockchain</a>
+      </article>
+
+      <p class="more"><a href="https://github.com/Squamis" target="_blank" rel="noopener">~ more at github.com/Squamis</a></p>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-header">
+      <span class="block-num">/03</span>
+      <span class="block-title">links</span>
+    </div>
+    <div class="block-body grid-3">
+      <a href="about.html">~ about</a>
+      <a href="https://github.com/Squamis" target="_blank" rel="noopener">~ github</a>
+      <a href="https://www.linkedin.com/in/thomas-haffenreffer-3575b717a" target="_blank" rel="noopener">~ linkedin</a>
+      <a href="mailto:thomas.haffenreffer@gmail.com">~ mail</a>
+      <a href="TWH_Cloud_Resume.pdf" target="_blank">~ resume.cloud</a>
+      <a href="TWH_Blockchain_Resume.pdf" target="_blank">~ resume.chain</a>
+    </div>
+  </section>
+
+  <footer class="bar">
+    <span class="sigil">~</span>
+    <span class="path"></span>
+    <span class="meta">2026</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    const root = document.documentElement;
+    const opts = document.querySelectorAll('.theme-option');
+    function render(theme) {
+      opts.forEach(function(o) {
+        o.setAttribute('aria-pressed', o.dataset.themeSet === theme ? 'true' : 'false');
+      });
+    }
+    render(root.getAttribute('data-theme'));
+    opts.forEach(function(o) {
+      o.addEventListener('click', function() {
+        const next = o.dataset.themeSet;
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        render(next);
+      });
+    });
+  })();
+</script>
 </body>
 </html>
